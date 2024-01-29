@@ -1,4 +1,21 @@
-# Example CASified Java Web Application
+
+```
+
+##实现过程参考链接：https://blog.csdn.net/qq_34021712/article/details/81318649
+这是一个测试用的client客户端，用户访问这个项目的url时，会检查是否已经授权，如果没有授权会在跳转到授权服务器server端进行授权！
+
+它的实现就是在web.xml中配置项目入口filter
+
+登出filter
+<filter-class>org.jasig.cas.client.session.SingleSignOutFilter</filter-class>
+
+登入filter
+<filter-class>org.jasig.cas.client.authentication.AuthenticationFilter</filter-class>
+
+```
+
+
+[//]: # (# Example CASified Java Web Application)
 
 This is sample java web application that exercises the CAS protocol features via the Java CAS Client.
 
